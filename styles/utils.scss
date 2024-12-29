@@ -1,0 +1,17 @@
+.adminpage {
+  margin-top: 9rem;
+}
+.para{
+  text-align: justify;
+}
+
+@media (min-width: 35em) {
+  .mt-24 {
+    margin-top: 2.4rem;
+  }
+
+  .container {
+    padding-inline: 7rem;
+    margin-inline: auto;
+  }
+}

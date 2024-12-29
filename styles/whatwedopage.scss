@@ -1,0 +1,199 @@
+@media (min-width: 35em) {
+  .whatwedo {
+    padding-block: 6.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    & > div:nth-of-type(1) {
+      flex: 40rem 1 1;
+
+      overflow: hidden;
+      & > div {
+        width: 60rem;
+        height: 60rem;
+        border-radius: 60%;
+
+        margin-left: -15rem;
+        position: relative;
+        position: relative;
+        border: solid 2rem white;
+        box-shadow: -1rem 1rem 8rem rgba(0, 0, 0, 0.2);
+        & > div {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h6 {
+            color: var(--danger);
+            text-transform: uppercase;
+          }
+
+          width: 30rem;
+          height: 8rem;
+          box-shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+
+          & > span {
+            display: block;
+            position: absolute;
+            font-size: 2.4rem;
+            left: 1rem;
+            top: -1rem;
+            width: 3rem;
+            height: 3rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: var(--danger);
+          }
+        }
+
+        & > div:nth-of-type(1) {
+          transform: translateY(16rem) translateX(-7rem);
+        }
+
+        & > div:nth-of-type(2) {
+          transform: translateY(26.5rem);
+        }
+
+        & > div:nth-of-type(3) {
+          transform: translateY(37rem) translateX(-7rem);
+        }
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      flex: 35rem 1 1;
+      display: flex;
+      align-items: center;
+      & > div {
+        text-align: justify;
+      }
+    }
+
+    & > div:nth-of-type(3) {
+      flex: 15rem 1 1;
+      position: relative;
+      overflow: hidden;
+      & > div {
+        width: 30rem;
+        height: 30rem;
+
+        border-radius: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: -8rem;
+        top: 50%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 35em) {
+  .whatwedo {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    & > div:nth-of-type(1) {
+  
+
+      & > div {
+        width: 60rem;
+        height: 60rem;
+        border-radius: 60%;
+
+        margin-left: -15rem;
+        position: relative;
+        position: relative;
+        border: solid 2rem white;
+        box-shadow: -1rem 1rem 8rem rgba(0, 0, 0, 0.2);
+        & > div {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: white;
+          
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h6 {
+            color: var(--danger);
+            text-transform: uppercase;
+          }
+
+          width: 30rem;
+          height: 8rem;
+          box-shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+
+          & > span {
+            display: block;
+            position: absolute;
+            font-size: 2.4rem;
+            left: 1rem;
+            top: -1rem;
+            width: 3rem;
+            height: 3rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: var(--danger);
+          }
+        }
+
+        & > div:nth-of-type(1) {
+          transform: translateY(16rem) translateX(-7rem);
+        }
+
+        & > div:nth-of-type(2) {
+          transform: translateY(26.5rem);
+        }
+
+        & > div:nth-of-type(3) {
+          transform: translateY(37rem) translateX(-7rem);
+        }
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      flex: 35rem 1 1;
+      display: flex;
+      align-items: center;
+      padding: 2.4rem;
+      & > div {
+        text-align: justify;
+      }
+    }
+
+    & > div:nth-of-type(3) {
+      flex: 15rem 1 1;
+      position: relative;
+      overflow: hidden;
+      height: 22rem;
+      & > div {
+        width: 30rem;
+        height: 30rem;
+
+        border-radius: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: -8rem;
+        top: 50%;
+      }
+    }
+  }
+}

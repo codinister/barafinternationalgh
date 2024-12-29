@@ -1,0 +1,16 @@
+.readmore {
+  padding: 1rem;
+  border: solid 0.1rem var(--danger);
+  border-radius: 2rem;
+  text-align: center;
+  color: var(--danger);
+  width: max-content;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--danger);
+    color: white;
+  }
+}

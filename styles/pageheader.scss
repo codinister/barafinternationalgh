@@ -1,0 +1,174 @@
+@media (min-width: 35em) {
+  .pageheader {
+    height: 40rem;
+    background-color: var(--danger);
+    margin-top: 8rem;
+    display: flex;
+
+    & > div:nth-of-type(1) {
+      flex: 10rem 1 0;
+      display: flex;
+      color: white;
+      padding-left: 6.4rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      h1 {
+        text-shadow: 0.5rem 0.5rem 1rem #c5390d;
+        z-index: 2;
+        border-top: solid 0.1rem white;
+        border-bottom: solid 0.1rem white;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+      }
+      &::after {
+        content: '';
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        background: linear-gradient(white, transparent);
+        box-shadow: 1rem 1rem 11rem #c5390d;
+        position: absolute;
+        top: -20rem;
+        left: -10rem;
+      }
+    }
+    & > div:nth-of-type(2) {
+      flex: 20rem 1 0;
+
+      position: relative;
+      overflow: hidden;
+      & > div {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.9;
+        box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.3);
+      }
+
+      & > div:nth-of-type(1) {
+        border-radius: 2rem;
+        transform: rotateZ(-30deg) translateY(-10rem) translateX(-40rem);
+        width: 10rem;
+        height: 10rem;
+        border: solid 0.8rem white;
+      }
+
+      & > div:nth-of-type(2) {
+        border-radius: 3rem;
+        transform: rotateZ(-30deg) translateY(10rem) translateX(-37rem);
+        width: 25rem;
+        height: 25rem;
+        border: solid 1.1rem white;
+      }
+
+      & > div:nth-of-type(3) {
+        border-radius: 3rem;
+        transform: rotateZ(-30deg) translateY(28rem) translateX(-17rem);
+        width: 15rem;
+        height: 15rem;
+        border: solid 1.1rem white;
+      }
+
+      & > div:nth-of-type(4) {
+        border-radius: 4rem;
+        transform: rotateZ(-30deg) translateY(-6rem) translateX(15rem);
+        width: 45rem;
+        height: 38rem;
+        border: solid 1.5rem white;
+      }
+    }
+  }
+}
+
+@media (max-width: 35em) {
+  .pageheader {
+    height: 80rem;
+    background-color: var(--danger);
+
+    display: flex;
+    flex-direction: column;
+    & > div:nth-of-type(1) {
+      flex: 10rem 1 0;
+      display: flex;
+      color: white;
+  
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      h1 {
+        text-shadow: 0.5rem 0.5rem 1rem #c5390d;
+        z-index: 2;
+        border-top: solid 0.1rem white;
+        border-bottom: solid 0.1rem white;
+        height: 7rem;
+        margin-inline: auto;
+      }
+      &::after {
+        content: '';
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        background: linear-gradient(white, transparent);
+        box-shadow: 1rem 1rem 11rem #c5390d;
+        position: absolute;
+        top: -20rem;
+        left: -10rem;
+      }
+    }
+    & > div:nth-of-type(2) {
+      flex: 20rem 1 0;
+
+      position: relative;
+      overflow: hidden;
+      & > div {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.9;
+        box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.3);
+      }
+
+      & > div:nth-of-type(1) {
+        border-radius: 2rem;
+        transform: rotateZ(-30deg) translateY(-10rem) translateX(-40rem);
+        width: 10rem;
+        height: 10rem;
+        border: solid 0.8rem white;
+      }
+
+      & > div:nth-of-type(2) {
+        border-radius: 3rem;
+        transform: rotateZ(-30deg) translateY(10rem) translateX(-37rem);
+        width: 25rem;
+        height: 25rem;
+        border: solid 1.1rem white;
+      }
+
+      & > div:nth-of-type(3) {
+        border-radius: 3rem;
+        transform: rotateZ(-30deg) translateY(28rem) translateX(-17rem);
+        width: 15rem;
+        height: 15rem;
+        border: solid 1.1rem white;
+      }
+
+      & > div:nth-of-type(4) {
+        border-radius: 4rem;
+        transform: rotateZ(-30deg) translateY(-6rem) translateX(15rem);
+        width: 45rem;
+        height: 38rem;
+        border: solid 1.5rem white;
+      }
+    }
+  }
+}

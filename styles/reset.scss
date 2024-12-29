@@ -1,0 +1,82 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --danger: #ff3d00;
+  --warning: #fea16d;
+  --white: #fff;
+  --black: #141414;
+}
+
+picture {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  color: #555;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 4.8rem;
+    line-height: 5.76rem;
+  }
+  h2 {
+    font-size: 3.9rem;
+    line-height: 4.68rem;
+  }
+
+  h3 {
+    font-size: 3.3rem;
+    line-height: 3.96rem; 
+  }
+
+  h4 {
+    font-size: 2.8rem;
+    line-height: 3.36rem; 
+  }
+
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2.7rem; 
+  }
+
+  h6 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+img {
+  max-width: 100%;
+}
