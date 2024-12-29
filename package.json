@@ -24,6 +24,7 @@
     "resend": "^4.0.1",
     "sanity": "^3.68.3",
     "sass": "^1.83.0",
+    "styled-components": "^6.1.13",
     "zod": "^3.24.1"
   },
   "devDependencies": {

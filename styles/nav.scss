@@ -9,7 +9,7 @@
     top: 0;
     width: 100%;
     background-color: white;
-    border-top: solid 0.5rem var(--danger);
+    border-top: solid 0.5rem var(--black);
 
     box-shadow: 0 0.5rem 1.6rem rgba(0, 0, 0, 0.2);
 
@@ -45,7 +45,7 @@
         }
 
         .active {
-          background-color: var(--danger);
+          background-color: var(--black);
           padding-inline: 1.6rem;
           padding-block: 1.2rem;
           border-radius: 1.8rem;
@@ -61,18 +61,18 @@
           li {
             width: max-content;
             .active {
-              background-color: var(--danger);
+              background-color: var(--black);
               color: white;
               padding-block: 1.2rem;
               border-radius: 1.8rem;
             }
             a {
-              color: var(--black);
+              color: #666;
               animation: text-zoom 1s 8s linear forwards;
               padding-inline: 1.6rem;
               font-size: 1.6rem;
               &:hover {
-                background-color: var(--danger);
+                background-color: var(--black);
                 color: white;
                 padding-block: 1.2rem;
                 border-radius: 1.8rem;

@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { products } from '@/data/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -18,19 +17,24 @@ const Nav = () => {
   const path = usePathname();
 
   const settings = useGetquery('settings', '/settings') || [];
+  const products = useGetquery('products', '/products') || [];
 
   return (
     <nav>
       <div className={`panel-1 container ${show ? 'show' : 'hide'}`}>
         <div>
           <div>
-            <Image
-              src={settings[0]?.comp_logo}
-              width="100"
-              height="50"
-              alt=""
-              className="logo"
-            />
+            {settings[0] ? (
+              <Image
+                src={settings[0]?.comp_logo}
+                width="100"
+                height="50"
+                alt=""
+                className="logo"
+              />
+            ) : (
+              ''
+            )}
           </div>
 
           <div>
@@ -94,28 +98,37 @@ const Nav = () => {
             <div>
               <div
                 style={{
-                  backgroundImage: `url(${products[3]?.img})`,
+                  backgroundImage: `url(${products[3]?.image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               ></div>
               <div
                 style={{
-                  backgroundImage: `url(${products[2]?.img})`,
+                  backgroundImage: `url(${products[2]?.image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               ></div>
               <div
                 style={{
-                  backgroundImage: `url(${products[1]?.img})`,
+                  backgroundImage: `url(${products[1]?.image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               ></div>
               <div>
                 <h4>Our products</h4>
-                <Image src={products[0]?.img} alt="" width="150" height="100" />
+                {products[0] ? (
+                  <Image
+                    src={products[0]?.image}
+                    alt=""
+                    width="150"
+                    height="100"
+                  />
+                ) : (
+                  ''
+                )}
               </div>
             </div>
           </div>
