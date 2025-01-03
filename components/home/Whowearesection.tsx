@@ -1,12 +1,13 @@
 'use client';
 
-import { whoweare } from '@/data/data';
+
+import { PageType } from '@/types/types';
 import Readmore from '../Readmore';
 import useGetquery from '@/data/server/useGetquery';
 
 const Whowearesection = () => {
-  const data = useGetquery('pages', '/pages') || [];
-  const who = data?.filter((v: any) => v.slug === 'who-we-are');
+  const data: PageType = useGetquery('pages', '/pages') || [];
+  const who = data?.filter((v) => v.slug === 'who-we-are');
 
   return (
     <div className="whowearesection">

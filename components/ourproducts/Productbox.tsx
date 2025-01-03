@@ -1,7 +1,7 @@
 'use client'
 
 
-const Productbox = ({ img, title, fn }: { title: string; img: string; fn: Function }) => {
+const Productbox = ({ img, title, fn }: { title: string; img: string; fn: (img: string, title: string)=> void }) => {
 
   return (
     <div

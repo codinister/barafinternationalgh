@@ -8,7 +8,6 @@ import useGetquery from '@/data/server/useGetquery';
 const Contact = () => {
   const set = useGetquery('settings', '/settings') || [];
 
-
   return (
     <>
       <Pageheader title="Contact" />
@@ -50,7 +49,7 @@ const Contact = () => {
           </div>
 
           <div className="contactformwrapper">
-          <ContactForm />
+            <ContactForm />
           </div>
         </div>
         <br />

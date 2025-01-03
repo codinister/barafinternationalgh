@@ -2,21 +2,18 @@
 
 
 type IframeType = {
-  src: any;
-  width: any;
-  height: any;
-  allowfullscreen: any;
-  loading: any;
-  referrerpolicy: any;
+  src: string;
+  width: string;
+  height: string;
+  allowfullscreen: string;
+  loading: string;
+  referrerpolicy: string;
 };
 
 const Map = ({
   src,
   width,
-  height,
-  allowfullscreen,
-  loading,
-  referrerpolicy,
+  height
 }: IframeType) => {
   return (
     <>
@@ -25,9 +22,6 @@ const Map = ({
         src={src}
         width={width}
         height={height}
-        allowFullScreen={allowfullscreen}
-        loading={loading}
-        referrerPolicy={referrerpolicy}
       ></iframe>
     </>
   );

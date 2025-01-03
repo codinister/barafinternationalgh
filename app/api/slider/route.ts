@@ -9,16 +9,14 @@ export async function GET() {
   try {
     const res = await client.fetch(
       groq`
-      *[_type == 'pages' && title != null]{
-      ..., 
-      "image": mainImage.asset->url, 
-      "slug": slug.current,
-      "excerpt": array::join(string::split((pt::text(body)), "")[0..500], "") + "...",
+      *[_type == 'slider' && title != null]{
+          title,
+          "image": image.asset->url
       }
       `
     );
 
-    return NextResponse.json(res)
+    return NextResponse.json(res);
   } catch (err) {
     console.log(err);
   }

@@ -9,7 +9,7 @@ const Modal = ({
   img: string;
   title: string;
   cls: string;
-  fn: Function;
+  fn: ()=> void;
 }) => {
   const content = (
     <div className={`modal-wrapper ${cls}`} onClick={() => fn()}>

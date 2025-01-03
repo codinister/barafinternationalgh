@@ -1,15 +1,15 @@
 'use client';
 
 import useGetquery from '@/data/server/useGetquery';
-import Image from 'next/image';
+import { ProductsType } from '@/types/types';
 import { useState } from 'react';
 
 const Hero = () => {
   const [getImg, setImg] = useState('');
 
-  const products = useGetquery('products', '/products') || [];
+  const products: ProductsType = useGetquery('products', '/products') || [];
 
-  const ourproducts = products.map((v: any, k: number) => {
+  const ourproducts = products.map((v, k: number) => {
     const title = v.title.toUpperCase().split('X');
     const size1 = title[0];
     const size2 = Number.parseInt(title[1]);

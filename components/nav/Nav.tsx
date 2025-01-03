@@ -6,11 +6,6 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import useGetquery from '@/data/server/useGetquery';
 
-type NavLinksType = {
-  url: string;
-  name: string;
-} & React.ComponentProps<'a'>;
-
 const Nav = () => {
   const [show, setShow] = useState(false);
 
@@ -27,7 +22,7 @@ const Nav = () => {
             {settings[0] ? (
               <Image
                 src={settings[0]?.comp_logo}
-                width="100"
+                width="80"
                 height="50"
                 alt=""
                 className="logo"

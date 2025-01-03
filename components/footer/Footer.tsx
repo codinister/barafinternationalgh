@@ -1,6 +1,5 @@
 'use client';
 
-import Contactdetails from '../contact/Contactdetails';
 import useGetquery from '@/data/server/useGetquery';
 
 const Footer = () => {

@@ -6,18 +6,17 @@ import { z } from 'zod';
 import { emailSchema } from './zodSchema';
 import Errors from './Errors';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useTransition } from 'react';
 import { BeatLoader } from 'react-spinners';
 import axiosInterceptor from '@/data/server/axiosInterceptor';
 
 const ContactForm = () => {
-  type Errtype = any;
+  type Errtype = string;
   type Succtype = boolean | undefined;
 
   const [err, setErr] = useState<Errtype>('');
   const [success, setSuccess] = useState<Succtype>(false);
 
-  const closeBox = () => setSuccess(false);
+
 
   const {
     register,

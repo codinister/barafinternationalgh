@@ -1,14 +1,12 @@
-'use client';
-
 import type { Metadata } from 'next';
 
 import './globals.scss';
 import Footer from '@/components/footer/Footer';
 import Nav from '@/components/nav/Nav';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import QueryProvider from '@/data/QueryProvider';
 
-const metadata: Metadata = {
-  title: 'Xminger Advertising',
+export const metadata: Metadata = {
+  title: 'Baraf International',
   description: 'Outdoor Advertising company in Ghana',
 };
 
@@ -17,16 +15,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const provider = new QueryClient();
-
   return (
     <html lang="en">
       <body>
-        <QueryClientProvider client={provider}>
+        <QueryProvider>
           <Nav />
           {children}
           <Footer />
-        </QueryClientProvider>
+        </QueryProvider>
 
         <div id="modal"></div>
       </body>
