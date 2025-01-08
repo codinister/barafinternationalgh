@@ -55,14 +55,11 @@ const Contact = () => {
         <br />
         <br />
         <div className="container">
-          <Map
-            src={set[0]?.gmap}
-            width="100%"
-            height="200pz"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          />
+        {set.length > 0 ? (
+              <Map src={set[0]?.location} width="100%" height="350pz" />
+            ) : (
+              ''
+            )}
         </div>
       </section>
     </>

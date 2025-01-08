@@ -63,15 +63,6 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  href="/whereweare"
-                  className={path === '/whereweare' ? 'active' : ''}
-                  onClick={() => setShow(false)}
-                >
-                  Where we are
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/whatwedo"
                   className={path === '/whatwedo' ? 'active' : ''}
                   onClick={() => setShow(false)}

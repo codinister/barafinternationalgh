@@ -3,7 +3,7 @@
 import Pageheader from '@/components/Pageheader';
 import useGetquery from '@/data/server/useGetquery';
 import { PageType } from '@/types/types';
-import Blockcontent from '@sanity/block-content-to-react';
+
 
 const Whatwedo = () => {
   const pages: PageType = useGetquery('pages', '/pages') || [];
@@ -13,7 +13,8 @@ const Whatwedo = () => {
 
   const img1 = products[2]?.image;
   const img2 = products[4]?.image;
-  const body = whatwedo[0]?.body;
+  const body = whatwedo[0]?.excerpt 
+
   return (
     <>
       <Pageheader title="What we do" />
@@ -43,7 +44,7 @@ const Whatwedo = () => {
         </div>
 
         <div>
-          {body ? <Blockcontent projectid={process.env.NEXT_PUBLIC_KEY} blocks={body} /> : '' }
+          {body }
         </div>
         <div>
           <div
