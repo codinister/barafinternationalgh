@@ -3,7 +3,7 @@
 import Pageheader from '@/components/Pageheader';
 import useGetquery from '@/data/server/useGetquery';
 import { PageType } from '@/types/types';
-import Blockcontent from '@sanity/block-content-to-react';
+
 
 const Whoweare = () => {
   const products = useGetquery('products', '/products') || [];
@@ -15,7 +15,7 @@ const Whoweare = () => {
   const img2 = products[3]?.image;
   const img3 = products[4]?.image;
 
-  const body = whoweare[0]?.body;
+  const body = whoweare[0]?.excerpt
 
   return (
     <>
@@ -24,10 +24,7 @@ const Whoweare = () => {
       <section className="whoweare">
         <div className="container">
           <div>
-            { body ? <Blockcontent
-              projectid={process.env.NEXT_PUBLIC_KEY}
-              blocks={body}
-            /> : '' }
+            { body ? body : '' }
           </div>
           <div>
             <div
