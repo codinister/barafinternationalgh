@@ -53,7 +53,7 @@ const Footer = () => {
 
       <div>
       <div className="container">
-        All rights reserved &copy; 2024 www.xmingeradvertising.com
+        All rights reserved &copy; 2024 www.barafinternationalgh.com
       </div>
       </div>
 
